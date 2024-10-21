@@ -1,3 +1,4 @@
+package MatrizesSoma;
 import java.util.Scanner;
 public class MatrizesGpt {
     public static void main(String[] args) {
@@ -14,9 +15,9 @@ public class MatrizesGpt {
                 soma = soma + matriz[i][c];
             }
         }
-        for(int u =0; u< matriz.length; u++){
-            for(int c = 0; c < matriz.length; c++){
-                System.out.print(matriz[u][c] + " ");
+        for (int[] ints : matriz) {
+            for (int c = 0; c < matriz.length; c++) {
+                System.out.print(ints[c] + " ");
             }
             System.out.println();
 
